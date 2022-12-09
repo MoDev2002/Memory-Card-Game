@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Diamond Shape</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+</head>
+<body>
+    <h1>Open the console Log!!</h1>
+    <script type="text/javascript">
+        var n = 3
+            for (var i = 0; i <= n; i++) {
+                var str = "";
+                for (var j = 1; j <= n - i; j++) {
+                    str += " ";
+                }
+                for (var k = 0; k < 2 * i - 1; k++) {
+                    str += "*";
+                }
+                console.log(str);
+            }
+            for (var i = 1; i <= n - 1; i++) {
+                var str = "";
+                for (var j = 0; j < i; j++) {
+                    str += " ";
+                }
+                for (var k = 2 * (n - i) - 1; k > 0; k--) {
+                    str += "*";
+                }
+                console.log(str);
+}
+    </script>
+</body>
+</html>
